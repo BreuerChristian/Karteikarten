@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karteikarten</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="quiz-container" class="material-card">
+  <div id="score-display"></div>
+  <div id="question-prompt"></div>
+  <div id="options-container"></div>
+
+  <button id="next-button" disabled>Nächste Frage</button>
+  <div id="result-message"></div>
+</div>
+
+<button id="export-button" style="display: none;">export</button>
+<button id="import-button" style="display: none;">import</button>
+<input type="file" id="file-input" accept=".csv" style="display: none;">
+ 
+
+<button id="show-text-button" style="display: none;">Fragen erzeugen</button>
+<div id="text-container" style="display: none;">
+  Den Text aus der Zwischenablage einfügen und anpassen.
+  <button id="copy-button">chat.openai.com</button>
+
+</div>
+<button id="advanced-button" >&lt;</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
